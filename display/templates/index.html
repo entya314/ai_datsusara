@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>脱サラ君</title>
+</head>
+<body>
+    <table>
+    {% for data in index %}
+        <tr>
+            <td>
+                <a href="{% url 'article' data.url %}">{{data.url}}</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
