@@ -1,16 +1,14 @@
-<html>
-<head>
-    <title>脱サラ君</title>
-</head>
-<body>
-    <table>
+{% extends 'layout.html' %}
+{% block title %}脱サラ君{% endblock %}
+{% block header %}株・FXのAI解析を行いウハウハするサイト{% endblock %}
+{% block content %}
+<table> 
     {% for data in index %}
-        <tr>
-            <td>
-                <a href="{% url 'article' data.url %}">{{data.title}}</a>
-            </td>
-        </tr>
-    {% endfor %}
-    </table>
-</body>
-</html>
+    <tr>
+        <td> 
+            <a href="{% url 'article' data.url %}">{{data.title}}</a> 
+        </td>
+    </tr> 
+    {% endfor %} 
+ </table>
+{% endblock %}

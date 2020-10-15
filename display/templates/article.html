@@ -1,9 +1,8 @@
-<html>
-<head>
-    <title>脱サラ君</title>
-</head>
-<body>
-    <h1>{{article_data.title}}</h1>
+{% extends 'layout.html' %}
+{% block title %}{article_data.title}}{% endblock %}
+{% block header %}{{article_data.title}}{% endblock %}
+{% block content %}
+<div>
     {{article_data.content|safe}}
-</body>
-</html>
+</div>
+{% endblock %}
