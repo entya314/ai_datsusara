@@ -34,16 +34,26 @@
         <div class="row">
             <div class="col-12 col-md-9 border">{% block content %}{% endblock %} </div>
             <div class="col-md-3 border">
-                <div>testtest</div>
+                <div>カテゴリとか</div>
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <div class="footer bg-dark  mt-2">
         <div class="container">
-            <p class="text-muted">Place sticky footer content here.</p>
+            <div class="row">
+                <div class="col-12 text-center">
+                     <p class="text-white">@entya314 DatsusaraUhaUha Policy</p>
+                </div>
+            </div>
         </div>
-    </footer>
-    <!-- jQuery -->
+    </div>
+</body>
+</html>
+    <!-- 数式が帰るやつ -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <!-- Bootstrap -->
     <script src="{% static 'js/bootstrap.min.js' %}"></script>

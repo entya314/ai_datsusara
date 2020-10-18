@@ -6,7 +6,12 @@
     {% for data in index %}
     <tr>
         <td> 
-            <a href="{% url 'article' data.url %}">{{data.title}}</a> 
+            <div>{{data.group_id}}-{{data.post_id}}</div> 
+        </td>
+        <td>
+            <div class="ml-3 mb-1">
+                <a href="{% url 'article' data.url %}">{{data.title}}</a> 
+            </div>
         </td>
     </tr> 
     {% endfor %} 

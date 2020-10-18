@@ -1,7 +1,10 @@
 {% extends 'layout.html' %}
-{% block title %}{article_data.title}}{% endblock %}
+{% block title %}{{article_data.title}}{% endblock %}
 {% block header %}{{article_data.title}}{% endblock %}
 {% block content %}
+<div class="mb-3 small">
+作成日時：{{article_data.insert_date}}　更新日時：{{article_data.update_date}}
+</div>
 <div>
     {{article_data.content|safe}}
 </div>
